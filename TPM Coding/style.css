@@ -1,0 +1,26 @@
+h2 {
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 20px 20px;
+}
+
+#paragraf {
+    color: greenyellow;
+  /*   border-style: solid;
+    border-radius: 50px;
+    border-width: 30px; */
+    margin: 25px;
+    padding: 15px;
+    display: block;
+}
+
+.heading3 {
+    color: blue;
+}
+
+/* body{
+    background-image: url("1.png");
+    background-size: 50%;
+    background-repeat: repeat-y;
+} */
