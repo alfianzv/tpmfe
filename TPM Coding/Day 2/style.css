@@ -1,0 +1,57 @@
+.text-inline {
+    display: inline;
+}
+
+.position {
+    position: absolute;
+}
+
+@keyframes animasi {
+    0% {
+        color: red;
+    } 
+    50% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+
+}
+    
+.text {
+    animation: animasi 3s linear 1s infinite none;    
+}
+
+.flex {
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+.div1 {
+    background-color: red !important;
+    order: 3;
+}
+
+.div12 {
+    background-color: blue;
+    order: 5;
+}
+
+.div11 {
+    background-color: green;
+    order: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+}
