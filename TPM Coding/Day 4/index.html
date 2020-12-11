@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan 5</title>
+  </head>
+  <body>
+    <button id="btn1">Animate height</button>
+    <button id="btn2">Reset height</button>
+
+    <div
+      id="box"
+      style="background: #98bf21; height: 100px; width: 100px; margin: 6px"
+    ></div>
+
+    <button id="btn3">Toggle</button>
+    <div id="kumpulan-tulisan">
+      <p id="tulisan">Ini Tulisan</p>
+      <p id="tulisan-lain">Ini Tulisan Lain</p>
+    </div>
+
+    <p id="data"></p>
+
+    <img id="photo" src="" alt="no image" />
+    <h3 id="nama">Nama</h3>
+    <h3 id="location">Location</h3>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#btn1").click(function () {
+        $("#box").animate({ height: "300px" });
+      });
+      $("#btn2").click(function () {
+        $("#box").animate({ height: "100px" });
+      });
+      $("#btn3").click(function () {
+        $("#tulisan, #box").toggle(1000);
+      });
+
+      $(document).ready(function () {
+        $("#data").load("https://api.github.com/users/suryashen5");
+      });
+
+      $.get("https://api.github.com/users/suryashen5", function (data, status) {
+        if (status === 404) {
+            $("#nama").text("Not Found");
+        }
+            $("#photo").attr("src", data.avatar_url);
+            $("#nama").text(data.name);
+            $("#location").text(data.location);
+      });
+
+      $.post(
+        "https://api.github.com/users/suryashen5",
+        data,
+        function (data, status) {}
+      );
+    </script>
+  </body>
+</html>
