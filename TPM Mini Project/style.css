@@ -1,37 +1,89 @@
-body {
-    margin: 0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borderbox;
+}
+
+.background {
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 1080px;
+}
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+.navbar-logo {
+  height: 40px;
+  padding-left: 100px;
+}
+.navbar-container {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-links {
+  list-style-type: none;
+  float: left;
+}
+li {
+  float: left;
+}
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar-links-text {
+  margin: 44px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600px;
+  font-size: 25px;
+  line-height: 43.88px;
 }
 
 .home {
-    background-image: url("landingpagebackground.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-    -webkit-filter: brightness(50%);    
-    
+  background-image: url("landingpagebackground.jpg");
 }
 
 .about-us {
-    background-image: url("page2.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-    -webkit-filter: brightness(50%);    
+  background-image: url("page2.jpg");
 }
+
+.our-work {
+  background-color: black;
+}
+
+.contact-us {
+  background-image: url("page4.jpg");
+}
+
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f6c214;
-    border-radius: 10px;
+  background: #f6c214;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    /* margin-top: 75px; */
-    -webkit-box-shadow: inset 0 0 5px black;
-    box-shadow: inset 0 0 5px black;
-    border-radius: 10px;
-    background-color: black;
+  -webkit-box-shadow: inset 0 0 5px black;
+  box-shadow: inset 0 0 5px black;
+  background-color: black;
 }
