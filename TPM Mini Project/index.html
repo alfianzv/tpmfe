@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <title>Aperture Photos</title>
   </head>
   <body>
-    <div class="navbar">
-      <div class="navbar-container">
-        <div class="navbar-items-container">
-          <img class ="navbar-logo" src="lens-aperture.png" alt="Logo">
-        </div>
-          <ul class="navbar-links">
-            <li><a href="" class="navbar-links-text">Home</a></li>
-            <li><a href="" class="navbar-links-text">About Us</a></li>
-            <li><a href="" class="navbar-links-text">Our Work</a></li>
-            <li><a href="" class="navbar-links-text">Contact Us</a></li>
-          </ul>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <nav>
+      <div class="navbar-items">
+        <span>
+          <a href="#home">
+            <img src="lens-aperture.png" alt="Logo" id="navbar-logo" />
+          </a>
+        </span>
+        <ul>
+          <li><a class="navbar-links home-link" href="#home">Home</a></li>
+          <li><a class="navbar-links aboutus-link" href="#about-us">About Us</a></li>
+          <li><a class="navbar-links ourwork-link" href="#our-work">Our Work</a></li>
+          <li><a class="navbar-links contactus-link" href="#contact-us">Contact Us</a></li>
+        </ul>
       </div>
-    </div>
-
-    <div class="home background"></div>
-    <div class="about-us background"></div>
-    <div class="our-work background"></div>
-    <div class="contact-us background"></div>
+    </nav>
+    <div id="home" class="home background"></div>
+    <div id="about-us" class="about-us background"></div>
+    <div id="our-work" class="our-work background"></div>
+    <div id="contact-us" class="contact-us background"></div>
   </body>
 </html>
