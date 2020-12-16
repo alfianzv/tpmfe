@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
     <title>Aperture Photos</title>
   </head>
   <body>
@@ -42,6 +43,36 @@
         </div>
       </nav>
     </div>
+    <script>
+       $(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 0 && scroll < 800) {
+          $(".home-link").css("color" , "#f6c214");
+          $(".aboutus-link").css("color" , "white");
+          $(".ourwork-link").css("color" , "white");
+          $(".contactus-link").css("color" , "white");
+          scroll = 800;
+        } else if (scroll > 800 && scroll < 1600) {
+          $(".home-link").css("color" , "white");
+          $(".aboutus-link").css("color" , "#f6c214");
+          $(".ourwork-link").css("color" , "white");
+          $(".contactus-link").css("color" , "white");
+        } else if (scroll > 1600 && scroll < 2400 ){
+          $(".home-link").css("color" , "white");
+          $(".aboutus-link").css("color" , "white");
+          $(".ourwork-link").css("color" , "#f6c214");
+          $(".contactus-link").css("color" , "white");
+        } else if (scroll > 2400) {
+          $(".home-link").css("color" , "white");
+          $(".aboutus-link").css("color" , "white");
+          $(".ourwork-link").css("color" , "white");
+          $(".contactus-link").css("color" , "#f6c214");
+        }
+      })
+    })
+    </script>
+
     <div id="home" class="home background">
       <div class="home-content">
         <div class="logo-spinning">
@@ -174,7 +205,6 @@
               <h3 class="submit-text">Submit</h3>
             </button>
           </div>
-          
         </div>
         </div>
       </div>

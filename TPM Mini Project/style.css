@@ -68,6 +68,9 @@ nav ul li a {
   transition: 0.5s;
 }
 
+.home-link {
+  color: #f6c214;
+}
 .main-text {
   font-family: 'Montserrat', sans-serif;
   color: #f6c214;
@@ -83,7 +86,7 @@ nav ul li a {
 }
 
 .home {
-  background-image: url("landingpagebackground.jpg");
+  background-image: url("landingpagebackground.png");
 }
 
 .home-content {
@@ -123,8 +126,9 @@ nav ul li a {
   font-size: 1.7rem;
 }
 
+
 .about-us {
-  background-image: url("page2.jpg");
+  background-image: url("page2.png");
 }
 
 .about-us-content {
@@ -174,9 +178,12 @@ nav ul li a {
 }
 
 .our-work-content {
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: absolute;
 }
 
 #our-work-head {
@@ -189,7 +196,7 @@ nav ul li a {
  padding-right: 150px;
  float: left;
  display: flex;
- position: absolute;
+ position: relative;
 }
 
 .column {
@@ -223,13 +230,13 @@ nav ul li a {
 }
 
 .contact-us {
-  background-image: url("page4.jpg");
+  background-image: url("page4.png");
 }
 
 #contact-us-head {
   text-align: center;
   padding-top: 75px;
-  padding-bottom: 50px;
+  padding-bottom: 85px;
 }
 
 .contact-us-content {
@@ -241,7 +248,6 @@ nav ul li a {
 
 .form-box {
   background: rgba(255, 255, 255, 0.85);
-  opacity: 50%;
   width: 500px;
   height: 415px;
   border-radius: 20px;
