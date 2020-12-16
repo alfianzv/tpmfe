@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Aperture Photos</title>
@@ -16,24 +16,182 @@
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-    <nav>
-      <div class="navbar-items">
-        <span>
-          <a href="#home">
-            <img src="lens-aperture.png" alt="Logo" id="navbar-logo" />
-          </a>
-        </span>
-        <ul>
-          <li><a class="navbar-links home-link" href="#home">Home</a></li>
-          <li><a class="navbar-links aboutus-link" href="#about-us">About Us</a></li>
-          <li><a class="navbar-links ourwork-link" href="#our-work">Our Work</a></li>
-          <li><a class="navbar-links contactus-link" href="#contact-us">Contact Us</a></li>
-        </ul>
+    <div class="navbar-wrapper">
+      <div class="navbar-black"></div>
+      <nav>
+        <div class="navbar-items">
+          <span>
+            <a href="#home">
+              <img src="lens-aperture.png" alt="Logo" id="navbar-logo" />
+            </a>
+          </span>
+          <ul>
+            <li><a class="navbar-links home-link" href="#home">Home</a></li>
+            <li>
+              <a class="navbar-links aboutus-link" href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a class="navbar-links ourwork-link" href="#our-work">Our Work</a>
+            </li>
+            <li>
+              <a class="navbar-links contactus-link" href="#contact-us"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="home" class="home background">
+      <div class="home-content">
+        <div class="logo-spinning">
+          <svg
+            class="svg-section2 spin"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 32 32"
+            style="enable-background: new 0 0 32 32"
+            xml:space="preserve"
+          >
+            <path
+              style="fill: #ffffff"
+              d="M21.172,13.98l5.691-9.664C24.008,1.658,20.211,0,16,0c-0.998,0-1.965,0.119-2.912,0.293
+                L21.172,13.98z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M19.951,20h11.482C31.766,18.715,32,17.391,32,16c0-3.873-1.43-7.377-3.723-10.145L19.951,20z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M16.5,10l-5.408-9.152C6.592,2.307,2.953,5.646,1.188,10H16.5z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M15.633,22l5.391,9.117c4.449-1.484,8.039-4.801,9.789-9.117H15.633z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M12.105,12H0.566C0.232,13.285,0,14.609,0,16c0,3.891,1.445,7.41,3.756,10.188L12.105,12z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M10.918,17.961l-5.744,9.758C8.027,30.352,11.809,32,16,32c1.041,0,2.055-0.117,3.041-0.305
+                L10.918,17.961z"
+            />
+          </svg>
+        </div>
+        <!-- <img src="lens-aperture.png" alt="Logo" id="logo-home" class=""/> -->
+        <h1 class="main-text text-aperture">Aperture Photos</h1>
+        <p class="sec-text home-white-text">Defining photos to reminiscenes</p>
       </div>
-    </nav>
-    <div id="home" class="home background"></div>
-    <div id="about-us" class="about-us background"></div>
-    <div id="our-work" class="our-work background"></div>
-    <div id="contact-us" class="contact-us background"></div>
+    </div>
+    <div id="about-us" class="about-us background">
+      <div class="about-us-content">
+        <h1 class="main-text" id="about-us-head">About Us</h1>
+        <div class="logo-spinning-about-us">
+          <svg
+            class="svg-section3 spin"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 32 32"
+            style="enable-background: new 0 0 32 32"
+            xml:space="preserve"
+          >
+            <path
+              style="fill: #ffffff"
+              d="M21.172,13.98l5.691-9.664C24.008,1.658,20.211,0,16,0c-0.998,0-1.965,0.119-2.912,0.293
+                L21.172,13.98z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M19.951,20h11.482C31.766,18.715,32,17.391,32,16c0-3.873-1.43-7.377-3.723-10.145L19.951,20z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M16.5,10l-5.408-9.152C6.592,2.307,2.953,5.646,1.188,10H16.5z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M15.633,22l5.391,9.117c4.449-1.484,8.039-4.801,9.789-9.117H15.633z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M12.105,12H0.566C0.232,13.285,0,14.609,0,16c0,3.891,1.445,7.41,3.756,10.188L12.105,12z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M10.918,17.961l-5.744,9.758C8.027,30.352,11.809,32,16,32c1.041,0,2.055-0.117,3.041-0.305
+                L10.918,17.961z"
+            />
+          </svg>
+        </div>
+        <div class="text-wrapper">
+          <p class="sec-text about-us-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur
+            vitae euismod leo, velit. Sit et justo cum nibh feugiat turpis
+            malesuada varius etiam. Commodo, vel volutpat sed quis lectus dictum
+            et, ut aliquam. Vel vitae etiam cras euismod nec non quis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="our-work" class="our-work background">
+      <div class="our-work-content">
+        <h1 class="main-text" id="our-work-head">Our Work</h1>
+        <div class="our-work-wrapper">
+          <div class="column">
+            <img src="pic1.jpg" alt="Pic 1" class="pic1" />
+          </div>
+          <div class="topdown">
+            <img src="pic2.jpg" alt="Pic 2" class="pic2" />
+            <img src="pic3.jpg" alt="Pic 3" class="pic3" />
+          </div>
+          <div class="column">
+            <img src="pic4.jpg" alt="Pic 4" class="pic4" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact-us" class="contact-us background">
+      <div class="contact-us-content">
+        <h1 class="main-text" id="contact-us-head">Contact us</h1>
+        <div class="contact-us-form">
+          <div class="form-box"></div>
+          <div class="input-form">
+            <input type="text" id="form-name" name="firstname" placeholder="Name" class="place-holder-text">
+            <input type="text" id="form-email" name="email" placeholder="Email" class="place-holder-text">
+            <input type="text" id="form-phone-number" name="phonenumber" placeholder="Phone Number" class="place-holder-text">
+            <input type="text" id="form-message" name="message" placeholder="Message" class="place-holder-text">
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="sub-footer-title">
+          <span>
+            <p class="footer-title-text">Design and Manage by:</p>
+            <span class="aperture-photos">
+              <img src="lens-aperture.png" alt="Logo" id="logo-footer" class=""/>
+              <h1 class="footer-main-text"> Aperture Photos</h1>
+            </span>
+          </span>
+          <span class="created-by">
+            <p class="footer-title-text created-by-text">Created by:</p>
+            <span>
+              <img src="logo.png" alt="Logo FaveSolution" class="fave-solution-logo">
+            </span>
+          </span>
+        </div>
+        <p class="copyright-text">© 2020 Aperture Photos, All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
