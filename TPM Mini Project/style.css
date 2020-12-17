@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -564,7 +567,7 @@ input[type="number"] {
     background-color: rgba(0, 0, 0, 0.5);
   }
   /*NAVBAR 600PX*/
-  
+
   nav {
     top: 0px;
     position: fixed;
@@ -575,35 +578,17 @@ input[type="number"] {
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, 0.15);
-    height: 70px;
+    height: 140px;
     width: 100%;
   }
-
-  .navbar-items {
-    padding: 15px 130px;
-  }
   #navbar-logo {
-    width: 43px;
-    height: 43px;
-  }
-  nav ul {
-    display: flex;
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li {
-    padding-top: 4px;
+    width: 100px;
+    height: 100px;
+    position: relative;
   }
   nav ul li a {
-    flex-direction: row;
-    color: white;
-    font-size: 20px;
-    padding: 25px 17px;
-    line-height: 30px;
-    overflow-x: hidden;
-    z-index: 999;
+    font-size: 30px;
   }
-
   /*HOME 600PX*/
 
   .home-content {
