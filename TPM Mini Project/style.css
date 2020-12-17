@@ -255,7 +255,7 @@ nav ul li a {
   position: absolute;
 }
 
-.input-form {
+#input-form {
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -263,8 +263,24 @@ nav ul li a {
   position: relative;
   align-items: center;
 }
-
+input[type=email] {
+  width: 440px; /* Full width */
+  height: 20px;
+  padding: 8px; /* Some padding */ 
+  border: 2px solid rgba(0, 0, 0, 0.25); /* Gray border */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+}
 input[type=text] {
+  width: 440px; /* Full width */
+  height: 20px;
+  padding: 8px; /* Some padding */ 
+  border: 2px solid rgba(0, 0, 0, 0.25); /* Gray border */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+}
+
+input[type=number] {
   width: 440px; /* Full width */
   height: 20px;
   padding: 8px; /* Some padding */ 
